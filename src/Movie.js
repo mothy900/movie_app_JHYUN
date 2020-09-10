@@ -6,11 +6,26 @@ function Movie({ movieNm, rank, openDt, audiAcc, audiCnt }) {
   return (
     <div className="movie">
       <div className="movie__data">
-        <h3>Ranking : {rank}</h3>
-        <h3>Movie Name : {movieNm}</h3>
-        <h3>Open Date : {openDt}</h3>
-        <h3>Reservation Rate : {audiCnt}</h3>
-        <h3>누적 관객 수 : {audiAcc}</h3>
+        <div>Rnaking</div>
+        <div>Movie Title</div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div className="movie__eachInfo movie__rank">
+          <h3>Ranking : {rank}</h3>
+        </div>
+        <div className="movie__eachInfo movie__name">
+          <h3>{movieNm}</h3>
+        </div>
+        <div className="movie__eachInfo movie__date">
+          <h3>개봉 날짜 : {openDt}</h3>
+        </div>
+        <div className="movie__eachInfo movie__rate">
+          <h3>예매율 : {audiCnt}</h3>
+        </div>
+        <div className="movie__eachInfo movie__cnt">
+          <h3>누적 관객 수 : {audiAcc}</h3>
+        </div>
       </div>
     </div>
   );

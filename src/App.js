@@ -49,10 +49,10 @@ class App extends React.Component {
         boxOfficeResult: { weeklyBoxOfficeList },
       },
     } = await Axios.get(finalURL);
-    let totalAudi;
+    let totalAudi = 0;
     for (let i = 0; i < weeklyBoxOfficeList.length; i++) {
-      totalAudi += parseInt(weeklyBoxOfficeList[i].audiCnt);
-      console.log("first : " + totalAudi);
+      totalAudi = totalAudi + parseInt(weeklyBoxOfficeList[i].audiCnt);
+      console.log("first : " + weeklyBoxOfficeList[0].audiCnt);
     }
 
     this.setState({ weeklyBoxOfficeList, isLoading: false, totalAudi });
@@ -69,8 +69,6 @@ class App extends React.Component {
   }*/
 
   render() {
-    // const { weeklyBoxOfficeList } = this.state;
-    //console.log(weeklyBoxOfficeList);
     const { isLoading, weeklyBoxOfficeList, totalAudi } = this.state;
     console.log("totalAudi : " + totalAudi);
     return (
@@ -97,7 +95,7 @@ class App extends React.Component {
                 movieNm={movie.movieNm}
                 openDt={movie.openDt}
                 audiAcc={movie.audiAcc}
-                audiCnt={(movie.audiCnt / totalAudi) * "100"}
+                audiCnt={((movie.audiCnt / totalAudi) * 100).toFixed(1)}
               />
             ))}
           </div>

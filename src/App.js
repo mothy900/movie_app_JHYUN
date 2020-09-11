@@ -43,7 +43,6 @@ class App extends React.Component {
       "https://www.kobis.or.kr/kobisopenapi/webservice/rest/boxoffice/searchWeeklyBoxOfficeList.json?key=26f8c1b0fd8afe36ceb0eff48b468b5b&targetDt=";
 
     const finalURL = movieURL + this.state.date;
-    console.log(finalURL);
     const {
       data: {
         boxOfficeResult: { weeklyBoxOfficeList },
@@ -56,7 +55,6 @@ class App extends React.Component {
     }
 
     this.setState({ weeklyBoxOfficeList, isLoading: false, totalAudi });
-    console.log("load :" + totalAudi);
     /*const requestURL =
       //http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=26f8c1b0fd8afe36ceb0eff48b468b5b&targetDt=20120101"
       const movieInfo = await fetch(requestURL);
@@ -70,7 +68,6 @@ class App extends React.Component {
 
   render() {
     const { isLoading, weeklyBoxOfficeList, totalAudi } = this.state;
-    console.log("totalAudi : " + totalAudi);
     return (
       <section className="container">
         <h1>Display Weekly Boxoffice Ranking</h1>

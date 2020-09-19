@@ -1,31 +1,48 @@
 body {
   background-color: #f1f1f1;
 }
+.movie__title {
+  display: flex;
+  justify-content: left;
 
+  font-size: 40px;
+  padding: 0 25px 0 5px;
+}
 .movie__data {
   display: flex;
   justify-content: left;
 
-  padding: 0 5px 0 5px;
+  padding: 0 25px 0 5px;
+}
+.movie__title_font {
+  border: solid 1px black;
+  padding: 5px 30px 5px 30px;
 }
 .movie__eachInfo {
   border: solid 1px black;
+  font-size: 30px;
+  padding: 5px 30px 5px 30px;
 }
 
 .movie__rank {
-  width: 150px;
+  width: 200px;
+  display: flex;
+  justify-content: center;
 }
 
 .movie__name {
-  width: 330px;
-  padding-right: 50px;
+  width: 500px;
 }
 .movie__date {
   width: 300px;
+  display: flex;
+  justify-content: center;
 }
 
 .movie__rate {
   width: 180px;
+  display: flex;
+  justify-content: center;
 }
 .movie__cnt {
   width: 300px;

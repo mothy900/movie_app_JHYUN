@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;600&display=swap");
+.movie_title {
+  font-size: 30px;
+  font-weight: 600;
+}
+.Menu-wrapper {
+  position: fixed;
+  top: 10%;
+  left: 10%;
+}
+html,
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homepage {
+  width: 100%;
+  height: 100%;
+  font-size: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.homepage__header {
+  position: fixed;
+  top: 30px;
+  left: 10%;
+}
+
+.homepage__title {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+.homepage__loader {
+  width: 100%;
+  height: 100%;
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader__serchbar {
+  margin-left: 15px;
+}

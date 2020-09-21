@@ -30,10 +30,13 @@ class Search extends React.Component {
     });
   };
 
-  handleKeyPress = (e) => {
-    if (this.state.movieNm) {
+  handleKeyPress = (event) => {
+    //if (this.state.movieNm) {
+    if (event.key === "Enter") {
+      console.log("enter");
       this.getmovie();
     }
+    //}
   };
   /*componentDidMount() {
     //페이지 로드시 한번 실행

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/movie_app_kofic/precache-manifest.f721f86e1767776429db1b75b58e9a76.js"
+  "/movie_app_kofic/precache-manifest.4b12586622c5103a877a453d07cde29f.js"
 );
 
 self.addEventListener('message', (event) => {

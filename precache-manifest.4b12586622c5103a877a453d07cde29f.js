@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "4806594dda9b578fb5007be5d44e5ca0",
+    "revision": "5d5271a604f5e65cf835ad3954d75eb0",
     "url": "/movie_app_kofic/index.html"
   },
   {
-    "revision": "5144b339494a064e410a",
+    "revision": "f39d73368f86e574326a",
     "url": "/movie_app_kofic/static/css/main.2a5d2a3f.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/movie_app_kofic/static/js/2.ca8a1402.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "5144b339494a064e410a",
-    "url": "/movie_app_kofic/static/js/main.bef18c14.chunk.js"
+    "revision": "f39d73368f86e574326a",
+    "url": "/movie_app_kofic/static/js/main.b3b151bb.chunk.js"
   },
   {
     "revision": "1c97534f4af1c4a8fe6d",

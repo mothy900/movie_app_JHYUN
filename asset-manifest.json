@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/movie_app_kofic/static/css/main.2a5d2a3f.chunk.css",
-    "main.js": "/movie_app_kofic/static/js/main.1adb5c49.chunk.js",
-    "main.js.map": "/movie_app_kofic/static/js/main.1adb5c49.chunk.js.map",
+    "main.js": "/movie_app_kofic/static/js/main.bef18c14.chunk.js",
+    "main.js.map": "/movie_app_kofic/static/js/main.bef18c14.chunk.js.map",
     "runtime-main.js": "/movie_app_kofic/static/js/runtime-main.3a8f8024.js",
     "runtime-main.js.map": "/movie_app_kofic/static/js/runtime-main.3a8f8024.js.map",
-    "static/js/2.7681c3d9.chunk.js": "/movie_app_kofic/static/js/2.7681c3d9.chunk.js",
-    "static/js/2.7681c3d9.chunk.js.map": "/movie_app_kofic/static/js/2.7681c3d9.chunk.js.map",
+    "static/js/2.ca8a1402.chunk.js": "/movie_app_kofic/static/js/2.ca8a1402.chunk.js",
+    "static/js/2.ca8a1402.chunk.js.map": "/movie_app_kofic/static/js/2.ca8a1402.chunk.js.map",
     "index.html": "/movie_app_kofic/index.html",
-    "precache-manifest.07ec28055653439107647e24d87217a1.js": "/movie_app_kofic/precache-manifest.07ec28055653439107647e24d87217a1.js",
+    "precache-manifest.f721f86e1767776429db1b75b58e9a76.js": "/movie_app_kofic/precache-manifest.f721f86e1767776429db1b75b58e9a76.js",
     "service-worker.js": "/movie_app_kofic/service-worker.js",
     "static/css/main.2a5d2a3f.chunk.css.map": "/movie_app_kofic/static/css/main.2a5d2a3f.chunk.css.map",
-    "static/js/2.7681c3d9.chunk.js.LICENSE.txt": "/movie_app_kofic/static/js/2.7681c3d9.chunk.js.LICENSE.txt"
+    "static/js/2.ca8a1402.chunk.js.LICENSE.txt": "/movie_app_kofic/static/js/2.ca8a1402.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.3a8f8024.js",
-    "static/js/2.7681c3d9.chunk.js",
+    "static/js/2.ca8a1402.chunk.js",
     "static/css/main.2a5d2a3f.chunk.css",
-    "static/js/main.1adb5c49.chunk.js"
+    "static/js/main.bef18c14.chunk.js"
   ]
 }

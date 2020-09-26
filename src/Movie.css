@@ -5,7 +5,7 @@ body {
   display: flex;
   justify-content: left;
 
-  font-size: 40px;
+  font-size: 25px;
   padding: 0 25px 0 5px;
 }
 .movie__data {
@@ -20,21 +20,21 @@ body {
 }
 .movie__eachInfo {
   border: solid 1px black;
-  font-size: 30px;
+  font-size: 20px;
   padding: 5px 30px 5px 30px;
 }
 
 .movie__rank {
-  width: 200px;
+  width: 100px;
   display: flex;
   justify-content: center;
 }
 
 .movie__name {
-  width: 500px;
+  width: 300px;
 }
 .movie__date {
-  width: 300px;
+  width: 200px;
   display: flex;
   justify-content: center;
 }
@@ -45,5 +45,5 @@ body {
   justify-content: center;
 }
 .movie__cnt {
-  width: 300px;
+  width: 200px;
 }

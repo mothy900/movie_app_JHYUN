@@ -86,15 +86,15 @@ class Rank extends React.Component {
               <div className="movie__title_font movie__rate">예매율</div>
               <div className="movie__title_font movie__cnt">누적 관객 수</div>
             </div>
-            {weeklyBoxOfficeList.map((movie) => (
+            {weeklyBoxOfficeList.map((shit) => (
               <Movie
-                key={movie.movieCd}
-                id={movie.movieCd}
-                rank={movie.rank}
-                movieNm={movie.movieNm}
-                openDt={movie.openDt}
-                audiCnt={((movie.audiCnt / totalAudi) * 100).toFixed(1)}
-                audiAcc={movie.audiAcc}
+                key={shit.movieCd}
+                id={shit.movieCd}
+                rank={shit.rank}
+                movieNm={shit.movieNm}
+                openDt={shit.openDt}
+                audiCnt={((shit.audiCnt / totalAudi) * 100).toFixed(1)}
+                audiAcc={shit.audiAcc}
               />
             ))}
           </div>

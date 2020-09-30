@@ -1,7 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
+import SearchDirector from "./Director";
+import SearchCompany from "./Company";
 
 function SearchMovie({
+  movieCd,
   movieNm,
   openDt,
   prdtYear,
@@ -20,8 +23,20 @@ function SearchMovie({
         <div className="search__movie__statNm">{prdtStatNm}</div>
         <div className="search__movie__nation">{nationAlt}</div>
         <div className="search__movie__genre">{genreAlt}</div>
-        <div className="search__movie__directors">{directors}</div>
-        <div className="search__movie__company">{companys}</div>
+        {directors.map((director) => (
+          <SearchDirector
+            key={movieCd}
+            id={movieCd}
+            peopleNm={director.peopleNm}
+          />
+        ))}
+        {companys.map((company) => (
+          <SearchCompany
+            key={movieCd}
+            id={movieCd}
+            companyNm={company.companyNm}
+          />
+        ))}
       </div>
     </div>
   );

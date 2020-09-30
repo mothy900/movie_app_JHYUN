@@ -23,7 +23,9 @@ class Search extends React.Component {
     } = await Axios.get(finalURL);
     const {
       data: {
-        movieListResult: { movieList: directors, companys },
+        movieListResult: {
+          movieList: { directors, companys },
+        },
       },
     } = await Axios.get(finalURL);
 
@@ -34,11 +36,19 @@ class Search extends React.Component {
     console.log(movieList[0].prdtYear);
     console.log(movieList[0].nationAlt);
     console.log(movieList[0].genreAlt);
-    console.log(movieList[0].directors[0].peopleNm);
-    console.log(movieList[0].companys[0].companyNm);
+    try {
+      console.log(movieList[0].directors[0].peopleNm);
+    } catch (error) {
+      console.log(error);
+    }
+
+    try {
+      console.log(movieList[0].companys[0].companyNm);
+    } catch (error) {
+      console.log(error);
+    }
+
     this.setState({ movieList, isLoading: false, directors, companys });
-    console.log("directors : " + directors);
-    console.log("companys : " + companys);
   };
 
   handleChange = (e) => {
@@ -58,8 +68,6 @@ class Search extends React.Component {
 
   render() {
     const { isLoading, movieList } = this.state;
-    console.log("movie List" + this.state.movieList);
-
     return (
       <section className="container">
         {isLoading ? (
@@ -87,13 +95,14 @@ class Search extends React.Component {
               <SearchMovie
                 key={searchMovie.movieCd}
                 id={searchMovie.movieCd}
+                movieCd={searchMovie.movieCd}
                 movieNm={searchMovie.movieNm}
                 openDt={searchMovie.openDt}
                 prdtYear={searchMovie.prdtYear}
                 nationAlt={searchMovie.nationAlt}
                 genreAlt={searchMovie.genreAlt}
-                directors={searchMovie.peopleNm}
-                company={searchMovie.companyNm}
+                directors={searchMovie.directors}
+                companys={searchMovie.companys}
               />
             ))}
           </div>

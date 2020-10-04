@@ -25,25 +25,25 @@ body {
 }
 
 .movie__rank {
-  width: 100px;
+  width: 80px;
   display: flex;
   justify-content: center;
 }
 
 .movie__name {
-  width: 300px;
+  width: 250px;
 }
 .movie__date {
-  width: 200px;
+  width: 150px;
   display: flex;
   justify-content: center;
 }
 
 .movie__rate {
-  width: 180px;
+  width: 100px;
   display: flex;
   justify-content: center;
 }
 .movie__cnt {
-  width: 200px;
+  width: 150px;
 }

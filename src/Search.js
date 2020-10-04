@@ -1,6 +1,7 @@
 import React from "react";
 import Axios from "axios";
 import SearchMovie from "./SearchMovie";
+import "./Search.css";
 
 class Search extends React.Component {
   state = {
@@ -13,7 +14,7 @@ class Search extends React.Component {
 
   getmovie = async () => {
     const movieURL =
-      "http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=26f8c1b0fd8afe36ceb0eff48b468b5b&movieNm=";
+      "http://www.kobis.or.kr/kobisopenapi/webservice/rest/movie/searchMovieList.json?key=587d2f6f9c5a21626ec444fb6bd09237&movieNm=";
 
     const finalURL = movieURL + this.state.movieNm;
     const {
@@ -65,7 +66,7 @@ class Search extends React.Component {
     }
     //}
   };
-
+  // search CSS 이쁘게 꾸미기
   render() {
     const { isLoading, movieList } = this.state;
     return (

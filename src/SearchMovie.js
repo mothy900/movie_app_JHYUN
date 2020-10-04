@@ -8,7 +8,6 @@ function SearchMovie({
   movieNm,
   openDt,
   prdtYear,
-  prdtStatNm,
   nationAlt,
   genreAlt,
   directors,
@@ -17,12 +16,22 @@ function SearchMovie({
   return (
     <div className="search__movie">
       <div className="search__movie__data">
-        <div className="search__movie__movieNm">{movieNm}</div>
-        <div className="search__movie__openDt">{openDt}</div>
-        <div className="search__movie__year">{prdtYear}</div>
-        <div className="search__movie__statNm">{prdtStatNm}</div>
-        <div className="search__movie__nation">{nationAlt}</div>
-        <div className="search__movie__genre">{genreAlt}</div>
+        <div className="search__movie__factor search__movie__movieNm">
+          <span>{movieNm}</span>
+        </div>
+        <div className="search__movie__factor search__movie__openDt">
+          <span>{openDt}</span>
+        </div>
+        <div className="search__movie__factor search__movie__year">
+          <span>{prdtYear}</span>
+        </div>
+
+        <div className="search__movie__factor search__movie__nation">
+          <span>{nationAlt}</span>
+        </div>
+        <div className="search__movie__factor search__movie__genre">
+          <span>{genreAlt}</span>
+        </div>
         {directors.map((director) => (
           <SearchDirector
             key={movieCd}
@@ -44,5 +53,13 @@ function SearchMovie({
 
 SearchMovie.propTypes = {
   id: PropTypes.string.isRequired,
+  movieCd: PropTypes.string.isRequired,
+  movieNm: PropTypes.string.isRequired,
+  openDt: PropTypes.string.isRequired,
+  prdtYear: PropTypes.string.isRequired,
+  nationAlt: PropTypes.string.isRequired,
+  genreAlt: PropTypes.string.isRequired,
+  directors: PropTypes.array.isRequired,
+  companys: PropTypes.array.isRequired,
 };
 export default SearchMovie;

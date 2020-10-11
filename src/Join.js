@@ -1,27 +1,13 @@
 import React from "react";
 
 class Join extends React.Component {
-  state = {
-    renderList: null,
-  };
-  componentDidMount() {
-    this.setState({
-      renderList: false,
-    });
-  }
-  handleClick(searchTerm) {
-    this.setState({ renderList: true });
-    this.fetchItems(searchTerm);
-  }
-  render() {
-    console.log(this.state.renderList);
+ 
+  render() {   
     return (
-      <section className="Join_container">
-        {this.state.renderList ? (
+      <section className="Join_container">      
           <div>
             <span>Join us</span>
-          </div>
-        ) : null}
+          </div>        
       </section>
     );
   }

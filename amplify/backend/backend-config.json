@@ -1,0 +1,10 @@
+{
+  "auth": {
+    "movieappjhrankingce149d38": {
+      "service": "Cognito",
+      "providerPlugin": "awscloudformation",
+      "dependsOn": [],
+      "customAuth": false
+    }
+  }
+}
